@@ -42,3 +42,20 @@ window.addEventListener("scroll", () => {
 backToTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+
+
+
+
+
+
+// Show notification on page load (mobile)
+window.addEventListener("load", () => {
+  const notifyCard = document.getElementById("notify-card");
+  notifyCard.classList.remove("hidden");
+});
+
+// Close button
+document.getElementById("close-btn").addEventListener("click", () => {
+  document.getElementById("notify-card").classList.add("hidden");
+});
