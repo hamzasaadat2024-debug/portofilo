@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hamza’s Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/animations.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand text-uppercase" href="#hero">Hamza</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#hero">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <!-- Advanced Theme Toggle -->
+        <li class="nav-item ms-3 d-flex align-items-center">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="themeToggle">
+            <label class="form-check-label text-light ms-2" for="themeToggle">
+              🌙
+            </label>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="hero text-center d-flex flex-column justify-content-center align-items-center p-5"
+    >
+      <br />
+      <br />
+      <br />
+
+      <br />
+      <br />
+      <br />
+      <h1 class="display-3 fw-bold reveal">Welcome to Hamza’s World</h1>
+      <p class="lead mb-4 reveal">
+        Frontend Developer | Analyst
+      </p>
+      <a
+        href="#projects"
+        class="btn btn-light btn-lg rounded-pill shadow reveal"
+      >
+        Explore My Work
+      </a>
+      <br />
+      <br />
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+      <h2 class="text-center mb-5 fw-bold reveal">Featured Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4 reveal">
+          <div class="card h-100 border-0 shadow-lg tilt">
+            <img src="pics/].JPG" class="card-img-top" alt="Project 1" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Responsive Blog</h5>
+              <p class="card-text">
+                A modern blog layout with navbars, sidebars, and featured posts.
+              </p>
+              <a
+                href="pics/BMJX9615.JPG"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card h-100 border-0 shadow-lg tilt">
+            <img
+              src="pics/hamza 233.jpg"
+              class="card-img-top"
+              alt="Project 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Portfolio Grid</h5>
+              <p class="card-text">
+                A responsive portfolio grid showcasing creative work with hover
+                effects.
+              </p>
+              <a
+                href="https://startbootstrap.com/template/portfolio-overview"
+                target="_blank"
+                class="btn btn-success"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card h-100 border-0 shadow-lg tilt">
+            <img src="pics/BMJX9615.JPG" class="card-img-top" alt="Project 3" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Interactive Dashboard</h5>
+              <p class="card-text">
+                A Bootstrap-powered dashboard with charts, tables, and modals.
+              </p>
+              <a
+                href="https://startbootstrap.com/template/sb-admin-2"
+                target="_blank"
+                class="btn btn-danger"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- About Section -->
+<section id="about" class="container my-5">
+  <h2 class="text-center mb-5 fw-bold reveal">About Me</h2>
+  <div class="row g-4">
+    <!-- Education -->
+    <div class="col-md-6">
+      <div class="card shadow-sm p-4 h-100">
+        <h5 class="fw-bold mb-3">🎓 Education</h5>
+        <ul class="list-unstyled">
+          <li><strong>Graduated:</strong> XYZ High School</li>
+          <li><strong>Currently:</strong> Exploring Full-Stack Development</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Certificates -->
+    <div class="col-md-6">
+      <div class="card shadow-sm p-4 h-100">
+        <h5 class="fw-bold mb-3">📜 Certificates</h5>
+        <ul class="list-unstyled">
+          <li>IELTS Certified (Band 7.5)</li>
+          <li>Web Development Bootcamp</li>
+          <li>UI/UX Design Fundamentals</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <!-- Timeline Section -->
+
+
+<section id="timeline" class="container my-5"> 
+  <h2 class="text-center mb-5 fw-bold text-white reveal">My Journey</h2> 
+  <div class="timeline"> 
+     <!-- Item 1: Deoband Madrassa -->
+    <div class="timeline-item reveal">
+      <div class="timeline-icon bg-info text-white">📖</div>
+      <div class="timeline-content">
+        <h5 class="fw-bold text-white">Deoband Madrassa, India</h5>
+        <span class="text-muted">2 Years (Counted as Grade 4 & 5 in Afghanistan)</span>
+        <p class="text-light">Studied religious and academic subjects for two years, later recognized as equivalent to Afghan grade 4 and 5.</p>
+      </div>
+    </div>
+
+    <!-- Item 2: High School -->
+    <div class="timeline-item reveal">
+      <div class="timeline-icon bg-primary text-white">🎓</div>
+      <div class="timeline-content">
+        <h5 class="fw-bold text-white">Afghan Parmakhtag High School</h5>
+        <span class="text-muted">Graduated in 2023</span>
+        <p class="text-light">Completed secondary education with strong focus on science and technology.</p>
+      </div>
+    </div>
+
+    <!-- Item 3: IELTS -->
+    <div class="timeline-item reveal">
+      <div class="timeline-icon bg-success text-white">📜</div>
+      <div class="timeline-content">
+        <h5 class="fw-bold text-white">IELTS IDP Pakistan</h5>
+        <span class="text-muted">Certified in 2024</span>
+        <p class="text-light">Achieved IELTS certification, strengthening international communication skills.</p>
+      </div>
+    </div>
+
+    <!-- Item 4: University -->
+    <div class="timeline-item reveal">
+      <div class="timeline-icon bg-warning text-dark">💻</div>
+      <div class="timeline-content">
+        <h5 class="fw-bold text-white">Bakhtar University</h5>
+        <span class="text-muted">Started BCS in 2025</span>
+        <p class="text-light">Currently pursuing Bachelor of Computer Science with focus on full-stack development.</p>
+      </div>
+    </div>
+   </div> 
+  </section>
+
+
+<!-- Books Section -->
+<section id="books" class="container my-5">
+  <h2 class="text-center mb-5 fw-bold text-white reveal">
+    Books I’ve Read & My Reflections
+  </h2>
+
+  <!-- Tabs -->
+  <ul class="nav nav-pills justify-content-center mb-4 reveal" id="bookTabs" role="tablist">
+    <li class="nav-item"><button class="nav-link active" id="pashto-tab" data-bs-toggle="tab" data-bs-target="#pashto" type="button">Pashto</button></li>
+    <li class="nav-item"><button class="nav-link" id="dari-tab" data-bs-toggle="tab" data-bs-target="#dari" type="button">Dari</button></li>
+    <li class="nav-item"><button class="nav-link" id="english-tab" data-bs-toggle="tab" data-bs-target="#english" type="button">English</button></li>
+    <li class="nav-item"><button class="nav-link" id="urdu-tab" data-bs-toggle="tab" data-bs-target="#urdu" type="button">Urdu</button></li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content">
+    <!-- Example: Pashto -->
+    <div class="tab-pane fade show active" id="pashto">
+      <div class="row g-4">
+        <div class="col-md-6 reveal">
+          <div class="card h-100 shadow-lg border-0 bg-gradient text-white">
+            <div class="card-body">
+              <h5 class="fw-bold">Da Khudai Khidmatgar Tehreek</h5>
+              <p class="text-light">History of Bacha Khan’s non-violent movement.</p>
+              <p class="small fst-italic">✨ My Reflection: Peaceful resistance can transform societies, inspiring patience and vision.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="card h-100 shadow-lg border-0 bg-gradient text-white">
+            <div class="card-body">
+              <h5 class="fw-bold">Pashto Poetry Collection</h5>
+              <p class="text-light">A collection of classical Pashto poems.</p>
+              <p class="small fst-italic">✨ My Reflection: Poetry revealed beauty in words and design, linking language with creativity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat similar structure for Dari, English, Urdu -->
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="container my-5">
+      <h2 class="text-center mb-5 fw-bold reveal">My Skills</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <!-- Skill Card -->
+          <div class="card shadow-sm mb-4 skill-card" data-aos="fade-up">
+            <div class="card-body">
+              <h5 class="fw-bold mb-3">
+                <i class="bi bi-code-slash text-primary me-2"></i> HTML & CSS
+              </h5>
+              <div class="progress skill-bar" style="height: 25px">
+                <div
+                  class="progress-bar bg-primary progress-bar-striped progress-bar-animated fw-bold"
+                  role="progressbar"
+                  style="width: 90%"
+                >
+                  90%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat for other skills -->
+          <div class="card shadow-sm mb-4 skill-card" data-aos="fade-up">
+            <div class="card-body">
+              <h5 class="fw-bold mb-3">
+                <i class="bi bi-bootstrap-fill text-success me-2"></i> Bootstrap
+              </h5>
+              <div class="progress skill-bar" style="height: 25px">
+                <div
+                  class="progress-bar bg-success progress-bar-striped progress-bar-animated fw-bold"
+                  role="progressbar"
+                  style="width: 95%"
+                >
+                  95%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow-sm mb-4 skill-card" data-aos="fade-up">
+            <div class="card-body">
+              <h5 class="fw-bold mb-3">
+                <i class="bi bi-braces text-warning me-2"></i> JavaScript
+              </h5>
+              <div class="progress skill-bar" style="height: 25px">
+                <div
+                  class="progress-bar bg-warning progress-bar-striped progress-bar-animated fw-bold text-dark"
+                  role="progressbar"
+                  style="width: 75%"
+                >
+                  75%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow-sm mb-4 skill-card" data-aos="fade-up">
+            <div class="card-body">
+              <h5 class="fw-bold mb-3">
+                <i class="bi bi-palette-fill text-danger me-2"></i> Design &
+                Creativity
+              </h5>
+              <div class="progress skill-bar" style="height: 25px">
+                <div
+                  class="progress-bar bg-danger progress-bar-striped progress-bar-animated fw-bold"
+                  role="progressbar"
+                  style="width: 85%"
+                >
+                  85%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container my-5">
+      <h2 class="text-center mb-5 fw-bold reveal">My Services</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-4 reveal">
+          <div class="card shadow-sm h-100 tilt">
+            <div class="card-body">
+              <i class="bi bi-laptop fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">Web Design</h5>
+              <p>
+                Creating modern, responsive websites with clean layouts and
+                professional aesthetics.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card shadow-sm h-100 tilt">
+            <div class="card-body">
+              <i class="bi bi-phone fs-1 text-success mb-3"></i>
+              <h5 class="fw-bold">Responsive Layouts</h5>
+              <p>
+                Ensuring websites look perfect on desktops, tablets, and mobile
+                devices.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card shadow-sm h-100 tilt">
+            <div class="card-body">
+              <i class="bi bi-brush fs-1 text-danger mb-3"></i>
+              <h5 class="fw-bold">Creative Branding</h5>
+              <p>
+                Designing unique visuals and layouts that reflect your brand
+                identity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+      <h2 class="text-center mb-5 fw-bold reveal">Get in Touch</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 reveal">
+          <div class="card shadow-sm border-0">
+            <div class="card-body text-center">
+              <p class="mb-4">
+                Interested in working together or want to learn more? Reach out
+                below.
+              </p>
+
+              <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="mailto:hamza@example.com" class="fs-3 text-light">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  class="fs-3 text-light"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/"
+                  target="_blank"
+                  class="fs-3 text-light"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary rounded-pill px-4">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section id="stats" class="container my-5 text-center">
+      <h2 class="mb-5 fw-bold reveal">Achievements</h2>
+      <div class="row g-4">
+        <div class="col-md-3 reveal">
+          <h1 class="fw-bold text-primary" id="projectsCount">0</h1>
+          <p>Projects Completed</p>
+        </div>
+        <div class="col-md-3 reveal">
+          <h1 class="fw-bold text-success" id="clientsCount">0</h1>
+          <p>Happy Clients</p>
+        </div>
+        <div class="col-md-3 reveal">
+          <h1 class="fw-bold text-danger" id="hoursCount">0</h1>
+          <p>Hours of Coding</p>
+        </div>
+        <div class="col-md-3 reveal">
+          <h1 class="fw-bold text-warning" id="coffeeCount">0</h1>
+          <p>Cups of Coffee</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section id="quotes" class="container my-5">
+      <h2 class="text-center mb-5 fw-bold reveal">Inspirational Quotes</h2>
+      <div class="row g-4">
+        <div class="col-md-4 reveal">
+  <div class="card h-100 shadow-sm bg-dark text-white">
+    <div class="card-body d-flex flex-column align-items-start">
+      <div class="d-flex align-items-center mb-2">
+        <img src="https://flagcdn.com/w20/af.png" alt="Pashto Flag" class="me-2 rounded shadow-sm">
+        <p class="fst-italic mb-0">"تعلیم د ژوند څراغ دی." (Pashto)</p>
+      </div>
+      <small class="text-muted">Education is the light of life.</small>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 reveal">
+  <div class="card h-100 shadow-sm bg-dark text-white">
+    <div class="card-body d-flex flex-column align-items-start">
+      <div class="d-flex align-items-center mb-2">
+        <img src="https://flagcdn.com/w20/ir.png" alt="Dari Flag" class="me-2 rounded shadow-sm">
+        <p class="fst-italic mb-0">"دانش، قدرت است." (Dari)</p>
+      </div>
+      <small class="text-muted">Knowledge is power.</small>
+    </div>
+  </div>
+</div>
+
+        <div class="col-md-4 reveal">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <div class="card-body">
+              <p class="fst-italic">
+                "The only limit to our realization of tomorrow is our doubts of
+                today." (English)
+              </p>
+              <small class="text-muted">Franklin D. Roosevelt</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <div class="card-body">
+              <p class="fst-italic">"محنت کا پھل میٹھا ہوتا ہے۔" (Urdu)</p>
+              <small class="text-muted">Hard work brings sweet fruit.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <div class="card-body">
+              <p class="fst-italic">"العلم نور." (Arabic)</p>
+              <small class="text-muted">Knowledge is light.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <div class="card-body">
+              <p class="fst-italic">
+                "دوستی، زندگی را شیرین می‌کند." (Persian)
+              </p>
+              <small class="text-muted">Friendship makes life sweet.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <div class="card-body">
+              <p class="fst-italic">
+                "La vie est un défi, relève-le." (French)
+              </p>
+              <small class="text-muted">Life is a challenge, face it.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <div class="card-body">
+              <p class="fst-italic">
+                "El conocimiento es la llave del éxito." (Spanish)
+              </p>
+              <small class="text-muted">
+                Knowledge is the key to success.
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <div class="card-body">
+              <p class="fst-italic">
+                "Wer kämpft, kann verlieren. Wer nicht kämpft, hat schon
+                verloren." (German)
+              </p>
+              <small class="text-muted">
+                Those who fight may lose, but those who don’t fight have already
+                lost.
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <div class="card-body">
+              <p class="fst-italic">"Başarı, sabırla gelir." (Turkish)</p>
+              <small class="text-muted">Success comes with patience.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-white text-center p-4 mt-5">
+      <div class="container">
+        <p class="mb-2">© 2025 Hamza | Built with Bootstrap 5</p>
+        <a href="#hero" class="btn btn-outline-light btn-sm rounded-pill">
+          Back to Top
+        </a>
+      </div>
+    </footer>
+
+    <!-- Back-to-Top Floating Button -->
+    <button
+      id="backToTop"
+      class="btn btn-secondary rounded-circle shadow position-fixed bottom-0 start-0 m-4"
+      style="display: none"
+    >
+      ↑
+    </button>
+
+    <!-- Floating Resume Button -->
+    <a
+      href="resume.pdf"
+      download
+      class="btn btn-primary rounded-pill shadow position-fixed bottom-0 end-0 m-4"
+    >
+      📄 Download Resume
+    </a>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Theme Toggle + Back-to-Top Logic -->
+    <script>
+      // Theme toggle
+      const toggleBtn = document.getElementById("themeToggle");
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+        if (document.body.classList.contains("light-mode")) {
+          toggleBtn.textContent = "☀️ Light";
+          toggleBtn.classList.remove("btn-outline-light");
+          toggleBtn.classList.add("btn-outline-dark");
+        } else {
+          toggleBtn.textContent = "🌙 Dark";
+          toggleBtn.classList.remove("btn-outline-dark");
+          toggleBtn.classList.add("btn-outline-light");
+        }
+      });
+
+      // Back-to-top button
+      const backToTopBtn = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      });
+
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+    
+    <!--  Notification Card --> 
+    <div id="notify-card" class="hidden">
+      <div class="notify-header">
+        <span> Announcement</span> <button id="close-btn">&times;</button>
+      </div>
+      <div class="notify-body">
+        <h2> Under Testing</h2>
+        <p>
+          This portfolio is currently in <strong>beta mode</strong>. Features
+          are being refined for the best experience. Thank you for visiting and
+          sharing feedback!
+        </p>
+      </div>
+      <div class="notify-footer">
+        <small>© 2026 Hamza | Portfolio Project</small>
+      </div>
+    </div>
+    <!-- Custom Animations JS -->
+    <script src="js/animations.js"></script>
+  </body>
+</html>

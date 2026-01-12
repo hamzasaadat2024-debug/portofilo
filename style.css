@@ -1,0 +1,476 @@
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+  /* Smooth transition for theme */
+  transition: background-color 0.4s ease, color 0.4s ease;
+
+
+}
+
+.navbar,
+footer {
+  background-color: #000 !important;
+}
+
+.card {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+/* hero section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("pics/background.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1,
+.hero p {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* light mode */
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.light-mode .navbar {
+  background-color: #fff !important;
+}
+
+body.light-mode .navbar .nav-link {
+  color: #212529 !important;
+}
+
+body.light-mode footer {
+  background-color: #f1f1f1 !important;
+  color: #212529;
+}
+
+body.light-mode .card {
+  background-color: #fff;
+  color: #212529;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* progress bars */
+.progress {
+  background-color: #333;
+}
+
+.progress-bar {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* btns */
+.btn {
+  border-radius: 50px;
+}
+
+/* Back to Top Button */
+#backToTop {
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  line-height: 20px;
+}
+#quotes {
+  position: relative;
+}
+
+#quotes h2 {
+  font-size: 2.2rem;
+  color: #ffcc70;
+  text-shadow: 0 0 12px rgba(255, 204, 112, 0.6);
+  letter-spacing: 1px;
+  animation: glowTitle 2s infinite alternate;
+}
+
+#quotes .card {
+  background: rgba(25, 25, 25, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+#quotes .card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(135deg, rgba(106,17,203,0.3), rgba(37,117,252,0.3));
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#quotes .card:hover::before {
+  opacity: 1;
+}
+
+#quotes .card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+#quotes .card-body p {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+  animation: fadeSlide 0.8s ease;
+}
+
+#quotes .card-body small {
+  font-size: 0.9rem;
+  color: #bbb;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+#quotes .card:hover small {
+  color: #ffcc70;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keyframes */
+@keyframes glowTitle {
+  from { text-shadow: 0 0 8px #ffcc70; }
+  to { text-shadow: 0 0 20px #ffcc70, 0 0 40px #ffcc70; }
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#quotes .card-body img {
+  width: 24px;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+#quotes .card-body img:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+#quotes .card-body p {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #f0f0f0;
+}
+
+#quotes .card-body small {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+#quotes .card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+
+/* footer */
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+/* floating resuming  */
+a[href$="resume.pdf"] {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* timeline */
+#timeline .card {
+  background-color: #111;
+  border-left: 4px solid #0d6efd;
+}
+
+#timeline .card-body {
+  padding: 20px;
+}
+
+/* CAROUSEL */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth tilt reset */
+.tilt {
+  transition: transform 0.2s ease-out;
+  transform-style: preserve-3d;
+}
+.cursor-softtrail {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: rgba(0, 123, 255, 0.5);
+  border-radius: 50%;
+  filter: blur(10px);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: softTrailFade 0.6s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes softTrailFade {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2.5);
+  }
+}
+/* Cinematic Frost Skill Bar Glow */
+.skill-bar .progress-bar {
+  width: 0%;
+  transition: width 2s ease;
+  box-shadow: 0 0 15px rgba(0, 120, 255, 0.3);
+}
+
+
+
+
+/* Card-style notification */
+#notify-card {
+  position: fixed;
+  top: 50%;
+  left: 40px; /* anchored to left side */
+  transform: translateY(-50%) scale(0.9);
+  width: 380px;
+  background: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 204, 112, 0.4);
+  color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+#notify-card.show {
+  opacity: 1;
+  pointer-events: auto;
+  animation: bounceInLeft 1s ease forwards, pulseGlow 3s infinite alternate;
+}
+
+#notify-card.hide {
+  animation: shrinkOut 0.6s ease forwards;
+  pointer-events: none;
+}
+
+/* Header */
+.notify-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 14px 18px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.notify-header button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.notify-header button:hover {
+  transform: rotate(180deg);
+  color: #ffcc70;
+}
+
+/* Body */
+.notify-body {
+  padding: 18px;
+  animation: fadeSlide 0.8s ease;
+}
+
+.notify-body h2 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: #ffcc70;
+  animation: glowText 2s infinite alternate;
+}
+
+.notify-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Footer */
+.notify-footer {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 18px;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* Animations */
+@keyframes bounceInLeft {
+  0% { transform: translate(-100%, -50%) scale(0.5); opacity: 0; }
+  60% { transform: translate(20px, -50%) scale(1.1); opacity: 1; }
+  80% { transform: translate(0, -50%) scale(0.95); }
+  100% { transform: translate(0, -50%) scale(1); }
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowText {
+  from { text-shadow: 0 0 5px #ffcc70; }
+  to { text-shadow: 0 0 20px #ffcc70, 0 0 40px #ffcc70; }
+}
+
+@keyframes pulseGlow {
+  from { box-shadow: 0 0 15px rgba(255, 204, 112, 0.3); }
+  to { box-shadow: 0 0 35px rgba(255, 204, 112, 0.7); }
+}
+
+@keyframes shrinkOut {
+  0% { transform: translate(0, -50%) scale(1); opacity: 1; }
+  100% { transform: translate(-40px, -50%) scale(0.6); opacity: 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-left: 3px solid #fff; /* white line for dark background */
+  max-width: 700px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.timeline-content {
+  background: rgba(255,255,255,0.05); /* subtle transparent card */
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-body p {
+  margin-bottom: 0.5rem;
+}
