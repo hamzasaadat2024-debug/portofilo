@@ -46,16 +46,20 @@ backToTop.addEventListener("click", () => {
 
 
 
-
-
-
-// Show notification on page load (mobile)
 window.addEventListener("load", () => {
-  const notifyCard = document.getElementById("notify-card");
-  notifyCard.classList.remove("hidden");
+  const popup = document.getElementById("warning-popup");
+  popup.classList.remove("hidden");
+  popup.classList.add("show");
 });
 
-// Close button
-document.getElementById("close-btn").addEventListener("click", () => {
-  document.getElementById("notify-card").classList.add("hidden");
+document.getElementById("popup-close").addEventListener("click", () => {
+  document.getElementById("warning-popup").classList.add("hidden");
+});
+
+document.getElementById("popup-dismiss").addEventListener("click", () => {
+  document.getElementById("warning-popup").classList.add("hidden");
+});
+
+document.getElementById("popup-confirm").addEventListener("click", () => {
+  document.getElementById("warning-popup").classList.add("hidden");
 });

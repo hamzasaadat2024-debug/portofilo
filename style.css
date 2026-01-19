@@ -301,120 +301,102 @@ a[href$="resume.pdf"] {
 }
 
 
-
-
-/* Card-style notification */
-#notify-card {
+#warning-popup {
   position: fixed;
   top: 50%;
-  left: 40px; /* anchored to left side */
-  transform: translateY(-50%) scale(0.9);
-  width: 380px;
-  background: rgba(30, 30, 30, 0.85);
-  backdrop-filter: blur(12px);
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 204, 112, 0.4);
-  color: #f0f0f0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 360px;
+  background: #fff8e1;
+  border: 2px solid #ffcc70;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 204, 112, 0.5);
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
-  opacity: 0;
+  color: #333;
   z-index: 9999;
+  opacity: 0;
   pointer-events: none;
+  overflow: hidden;
 }
 
-#notify-card.show {
+#warning-popup.show {
   opacity: 1;
   pointer-events: auto;
-  animation: bounceInLeft 1s ease forwards, pulseGlow 3s infinite alternate;
+  animation: bounceInLeft 0.8s ease forwards;
 }
 
-#notify-card.hide {
-  animation: shrinkOut 0.6s ease forwards;
-  pointer-events: none;
-}
-
-/* Header */
-.notify-header {
+.popup-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  padding: 14px 18px;
+  justify-content: space-between;
+  background: #ffcc70;
+  padding: 12px 16px;
   font-weight: 600;
   font-size: 1rem;
-  color: #fff;
+  color: #222;
 }
 
-.notify-header button {
+.popup-icon {
+  font-size: 1.4rem;
+  margin-right: 8px;
+}
+
+.popup-title {
+  flex-grow: 1;
+}
+
+#popup-close {
   background: transparent;
   border: none;
-  color: #fff;
   font-size: 1.3rem;
   cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease;
+  color: #222;
 }
 
-.notify-header button:hover {
-  transform: rotate(180deg);
-  color: #ffcc70;
-}
-
-/* Body */
-.notify-body {
-  padding: 18px;
-  animation: fadeSlide 0.8s ease;
-}
-
-.notify-body h2 {
-  margin: 0 0 10px;
-  font-size: 1.4rem;
-  color: #ffcc70;
-  animation: glowText 2s infinite alternate;
-}
-
-.notify-body p {
+.popup-body {
+  padding: 16px;
   font-size: 1rem;
-  line-height: 1.6;
-  color: #ddd;
+  line-height: 1.5;
 }
 
-/* Footer */
-.notify-footer {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 12px 18px;
-  text-align: right;
-  font-size: 0.8rem;
-  color: #aaa;
+.popup-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 12px 16px;
+  background: rgba(255, 204, 112, 0.1);
 }
 
-/* Animations */
+.popup-actions button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#popup-dismiss {
+  background: #eee;
+  color: #333;
+}
+
+#popup-confirm {
+  background: #ffcc70;
+  color: #222;
+}
+
+#popup-dismiss:hover,
+#popup-confirm:hover {
+  background: #ffd87a;
+}
+
+/* Animation */
 @keyframes bounceInLeft {
   0% { transform: translate(-100%, -50%) scale(0.5); opacity: 0; }
-  60% { transform: translate(20px, -50%) scale(1.1); opacity: 1; }
-  80% { transform: translate(0, -50%) scale(0.95); }
-  100% { transform: translate(0, -50%) scale(1); }
+  60% { transform: translate(-40%, -50%) scale(1.05); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1); }
 }
-
-@keyframes fadeSlide {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes glowText {
-  from { text-shadow: 0 0 5px #ffcc70; }
-  to { text-shadow: 0 0 20px #ffcc70, 0 0 40px #ffcc70; }
-}
-
-@keyframes pulseGlow {
-  from { box-shadow: 0 0 15px rgba(255, 204, 112, 0.3); }
-  to { box-shadow: 0 0 35px rgba(255, 204, 112, 0.7); }
-}
-
-@keyframes shrinkOut {
-  0% { transform: translate(0, -50%) scale(1); opacity: 1; }
-  100% { transform: translate(-40px, -50%) scale(0.6); opacity: 0; }
-}
-
 
 
 

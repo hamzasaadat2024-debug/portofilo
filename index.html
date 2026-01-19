@@ -760,24 +760,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
    
-    
-    <!--  Notification Card --> 
-    <div id="notify-card" class="hidden">
-      <div class="notify-header">
-        <span> Announcement</span> <button id="close-btn">&times;</button>
-      </div>
-      <div class="notify-body">
-        <h2> Under Testing</h2>
-        <p>
-          This portfolio is currently in <strong>beta mode</strong>. Features
-          are being refined for the best experience. Thank you for visiting and
-          sharing feedback!
-        </p>
-      </div>
-      <div class="notify-footer">
-        <small>© 2026 Hamza | Portfolio Project</small>
-      </div>
-    </div>
+    <!-- Friendly Pop-up -->
+<div id="warning-popup" class="hidden">
+  <div class="popup-header">
+    <span class="popup-icon">✨</span>
+    <span class="popup-title">Just a Little Note</span>
+    <button id="popup-close">&times;</button>
+  </div>
+  <div class="popup-body">
+    <p>
+      Hello and welcome! 🌼 This portfolio is currently in <strong>beta mode</strong>, which means it's still growing and getting even better. I'm so grateful you're here — your visit truly means a lot. Feel free to explore and share any thoughts!
+    </p>
+  </div>
+  <div class="popup-actions">
+    <button id="popup-dismiss">Close</button>
+    <button id="popup-confirm">Lovely!</button>
+  </div>
+</div>
+
     <!-- Custom Animations JS -->
      <script src="script.js"></script>
     <script src="js/animations.js"></script>
